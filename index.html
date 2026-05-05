@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <p>Enter the number of pixels (max:100)</p>
-        <input type="text" id="dimension">
-        <button id="submitBtn">Submit</button>
+    <div class="wrapper">
+        <div class="header">
+            <p>SKETCH-AND-ETCH</p>
+        </div>
+        <div class="main-window">
+            <div id="controls">
+                <p>Enter the number of pixels (max:100)</p>
+                <input type="text" id="dimension">
+                <button id="submitBtn">Update</button>
+                <button id="reset">Reset</button>
+            </div>
+
+            <div id="container">
+
+            </div>
+        </div>
     </div>
-
-    <div id="container">
-
-    </div>
-
-    <button id="reset">Reset</button>
 </body>
 </html>

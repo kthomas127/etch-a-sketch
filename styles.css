@@ -1,3 +1,22 @@
+body {
+    background-color: lightblue;
+}
+
+.wrapper {
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+title {
+    display: none;
+}
+
+.main-window {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 #container {
     display: flex;
@@ -12,4 +31,13 @@
     align-items: center;
     justify-content: center;
     background-color: gray;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
