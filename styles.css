@@ -1,12 +1,15 @@
 body {
-    background-color: lightblue;
+    background: #020024;
+    background: linear-gradient(270deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 42%, rgba(0, 212, 255, 1) 100%);
 }
 
-.wrapper {
-    display:  flex;
-    flex-direction: column;
+.header {
+    display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
 }
 
 title {
@@ -15,7 +18,7 @@ title {
 
 .main-window {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #container {
@@ -30,9 +33,9 @@ title {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: gray;
+    background-color: white;
     box-sizing: border-box;
-    border: 1px solid #000;
+    border: 1px solid gray;
 }
 
 #controls {
@@ -40,4 +43,30 @@ title {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+}
+
+#colorPicker {
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    background: none;
+}
+
+#colorPicker::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+
+#penDiv {
+    display: flex;
+}
+
+button.active {
+    box-shadow: 0 2px #000000;
+    border: #000000;
+    background: linear-gradient(270deg,rgb(248, 247, 255) 0%, rgb(236, 236, 255) 42%, rgb(0, 57, 68) 100%);
+    outline: 2px;
 }

@@ -10,18 +10,24 @@
 <body>
     <div class="wrapper">
         <div class="header">
-            <p>SKETCH-AND-ETCH</p>
+            <p>SKETCH PAD</p>
         </div>
         <div class="main-window">
             <div id="controls">
+                <button data-tool="rainbow">Rainbow</button>
+                <div id="penDiv">
+                    <button data-tool='pen'>Pen</button>
+                    <input type="color" id="colorPicker" value="#000000">
+                </div>
+                <!-- <button data-tool="fill">Fill</button> -->
+                <button data-tool="eraser">Eraser</button>
                 <p>Enter the number of pixels (max:100)</p>
                 <input type="text" id="dimension">
-                <button id="submitBtn">Update</button>
+                <button id="submitBtn">Resize</button>
                 <button id="reset">Reset</button>
             </div>
-
             <div id="container">
-
+                
             </div>
         </div>
     </div>
